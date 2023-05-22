@@ -15,7 +15,7 @@ const App = () => {
   
   useEffect(() => {
        localStorage.setItem("contacts", JSON.stringify(contacts));
-  }, [contacts.length]);
+  }, [contacts.length,contacts]);
 
   const changeContacts = (name, number) => {
      if (contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase())){
